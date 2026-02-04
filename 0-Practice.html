@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practice</title>
+    <!--Awesom Icons Link-->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+
+<style>
+
+    body {
+       background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+        color: white;
+        margin: 0;
+        padding: 0;
+    }
+
+    .contact-container {
+        max-width: 800px;
+        background: rgba(255,255,255,0.08);
+        margin: 80px auto;
+        padding: 40px;
+        border-radius: 20px;
+        box-shadow: 0 20px 40px rgba(0,0,0,0.3);
+        text-align: center;
+    }
+
+    .contact-container h1 {
+        font-size: 36px;
+        margin-bottom: 10px;
+    }
+
+    .contact-container p {
+        font-size: 16px;
+        opacity: 0.9;
+        margin-bottom: 40px;
+    }
+
+    .contact-links {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+        gap: 20px;
+    }
+
+    .contact-card {
+        background: rgba(255,255,255, 0.12);
+        border-radius: 15px;
+        padding: 25px;
+        transition: 0.3s ease;
+        text-decoration: none;
+        color: #fff;
+    }
+
+    .contact-card:hover {
+       transform: translateY(-8px);
+       background: rgba(255,255,255,0.2);
+    }
+
+    .contact-card i {
+        font-size: 36px;
+        margin-bottom: 15px;
+        display: block;
+    }
+
+    .contact-card span {
+        font-size: 18px;
+        font-weight: 600;
+    }
+
+    .phone i {
+        color: #00d4ff;
+    }
+    .whatsapp i {
+         color: #25D366; 
+    }
+    .facebook i {
+        color: #1877F2;
+    }
+    .tiktok i {
+        color: #ff0050;
+    }
+
+    footer {
+        margin-top: 40px;
+        font-size: 14px;
+        opacity: 0.4;
+    }
+
+
+
+
+
+    * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+    }
+
+   
+
+    nav {
+        background: red;
+        justify-content: space-between;
+        align-items: center;
+        display: flex;
+        padding: 25px 10px;
+        position: fixed;
+        width: 100%;
+        z-index: 1000;
+    }
+
+    nav ul {
+        list-style: none;
+        display: flex;
+        gap: 25px;
+    }
+
+    nav ul li a {
+        text-decoration: none;
+        background: white;
+        padding: 0 5px;
+        border-radius: 2px;
+        font-size: 25px;
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    }
+
+    h1 {
+        font-family: 'Times New Roman', Times, serif;
+        font-size: 50px;
+    }
+
+   nav a:hover {
+        color: black;
+
+    }
+
+   .hp p {
+        align-items: center;
+        text-align: center;
+        padding-top: 18%;
+        font-size: xx-large;
+    }
+
+      section {
+            padding: 60px 50px;
+        }
+
+     section h2 {
+            margin-bottom: 20px;
+        }
+
+   .about {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 30px;
+            align-items: center;
+   }
+
+    .about-left img {
+        width: 50%;
+        height:400px;
+        margin-top: 30px;
+        border-radius: 15px;
+        box-shadow: 0 10px 30px rgba(0,0,0,0.6);
+    }
+
+    .about figcaption {
+        margin-left: 15%;
+    }
+
+    .about-right p {
+        text-align: left;
+        margin-left: -200px;
+
+    }
+
+</style>
+</head>
+
+<body>
+    <nav>
+        <h1>Muhammad Talha Jutt</h1>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About Us</a></li>
+            <li><a href="#contact">Contact Us</a></li>
+        </ul>
+    </nav>
+     <div class="hp">
+    <p>Welcome To My Official Website</p>
+     </div>
+
+    <main>
+        <section id="about">
+            <div class="about">
+
+            <div class="about-left">
+            <h2>About Me</h2>
+            <figure>
+                <img src="E:\New folder (2)\New folder (3)\New folder (3)\New folder (4)\New folder (3)\میری پیاری جان\Snapchat-1451003152.jpg" alt="Photo">
+                <figcaption>Muhammad Talha Jutt</figcaption>
+            </figure>
+            </div>
+
+            <div class="about-right">
+                <p>My name is <b>Muhammad Talha</b>. I am from <b>Lahore</b>. <br>I am a <b>Full Stack Developer</b>.</p>
+            </div>
+
+            </div>
+        </section>
+
+        <section id="contact">
+            <div class="contact-container">
+                <h1>Contact Us</h1>
+                <p>We’d love to hear from you. Reach out anytime.</p>
+
+                <div class="contact-links">
+                    <a href="tel:+923059547775" class="contact-card phone">
+                        <i class="fas fa-phone"></i>
+                        <span>Phone</span>
+                    </a>
+
+                    <a href="https://wa.me/+923059547775" target="_blank" class="contact-card whatsapp">
+                        <i class="fab fa-whatsapp"></i>
+                        <span>WhatsApp</span>
+                    </a>
+
+                    <a href="https://www.facebook.com/m.talha.dhillon.2025" target="_blank" class="contact-card facebook">
+                        <i class="fab fa-facebook"></i>
+                        <span>Facebook</span>
+                    </a>
+
+                    <a href="https://www.tiktok.com/@m.talhajutt2?_r=ZS-93WnvJW44aC" target="_blank" class="contact-card tiktok">
+                        <i class="fab fa-tiktok"></i>
+                        <span>TikTok</span>
+                    </a>
+                </div>
+
+                <footer>
+                     © 2026 Your Company Name
+                </footer>
+
+            </div>
+        </section>
+    </main>
+</body>
+</html>
